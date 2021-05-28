@@ -1,15 +1,7 @@
 @font-face {
     font-family: 'avenir';
-    src:url('Metropolis-Black.woff2') format('woff2'), 
-        url('Metropolis-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;    
-}
-@font-face {
-    font-family: 'avenir';
-    src:url('Metropolis-Bold.woff2') format('woff2'), 
-        url('Metropolis-Bold.woff') format('woff');
-    font-weight: bold;
+    src:url('Metropolis-Thin.woff2') format('woff2');
+    font-weight: 100;
     font-style: normal;    
 }
 @font-face {
@@ -60,7 +52,15 @@
 }
 @font-face {
     font-family: 'avenir';
-    src:url('Metropolis-Thin.woff2') format('woff2');
-    font-weight: 100;
+    src:url('Metropolis-Black.woff2') format('woff2'), 
+        url('Metropolis-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-Bold.woff2') format('woff2'), 
+        url('Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;    
 }
