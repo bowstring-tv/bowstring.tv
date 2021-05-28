@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-Black.woff2') format('woff2'), 
+        url('Metropolis-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-Bold.woff2') format('woff2'), 
+        url('Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-Light.woff2') format('woff2'), 
+        url('Metropolis-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-LightItalic.woff2') format('woff2'), 
+        url('Metropolis-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('AvenirLTStd-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('AvenirLTStd-Roman.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-Medium.woff2') format('woff2'), 
+        url('Metropolis-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-MediumItalic.woff2') format('woff2'), 
+        url('Metropolis-MediumItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('avenir-lt-std-65-medium-oblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;    
+}
+@font-face {
+    font-family: 'avenir';
+    src:url('Metropolis-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;    
+}
