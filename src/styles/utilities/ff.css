@@ -1,0 +1,42 @@
+.avenir-black {
+    font-weight: 900;
+}
+
+.avenir-bold {
+    font-weight: bold;
+}
+
+.avenir-medium {
+    font-weight: 600;
+}
+
+.avenir-medium-italic {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.avenir-medium-oblique {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.avenir-roman {
+    font-weight: 500;
+}
+
+.avenir-book {
+    font-weight: 400;
+}
+
+.avenir-light {
+    font-weight: 300;
+}
+
+.avenir-light-italic {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.avenir-thin {
+    font-weight: 100;
+}
