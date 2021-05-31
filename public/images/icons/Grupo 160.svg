@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="65" viewBox="0 0 66 65">
+  <g id="Grupo_160" data-name="Grupo 160" transform="translate(0.036 0.202)">
+    <path id="Trazado_78" data-name="Trazado 78" d="M1022.813-90.111s-.487-3.428-1.979-4.938a7.117,7.117,0,0,0-4.984-2.108c-6.962-.5-17.405-.5-17.405-.5h-.02s-10.443,0-17.405.5a7.118,7.118,0,0,0-4.984,2.108c-1.491,1.51-1.977,4.938-1.977,4.938a75.064,75.064,0,0,0-.5,8.05v3.775a75.069,75.069,0,0,0,.5,8.051s.485,3.428,1.977,4.939c1.892,1.98,4.378,1.919,5.485,2.126,3.981.382,16.914.5,16.914.5s10.453-.015,17.416-.519a7.119,7.119,0,0,0,4.984-2.107c1.491-1.511,1.979-4.939,1.979-4.939a75.451,75.451,0,0,0,.5-8.051V-82.06A75.446,75.446,0,0,0,1022.813-90.111ZM993.3-73.712V-87.689l13.441,7.014Z" transform="translate(-965.71 113.16)" fill="none" stroke="#fbb03b" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="Rectángulo_232" data-name="Rectángulo 232" transform="translate(-0.036 -0.202)" fill="none" stroke="#fbb03b" stroke-width="2">
+      <rect width="66" height="65" rx="8" stroke="none"/>
+      <rect x="1" y="1" width="64" height="63" rx="7" fill="none"/>
+    </g>
+  </g>
+</svg>
