@@ -1,0 +1,13 @@
+:root {
+    /* Fonts */
+    font-family: "avenir";
+    /* Colors */
+    --yellow-dark: #DE9816;
+    --yellowe-light: #FBB03B;
+    --black: #000;
+    --white: #fff;
+    --grey-700: #4d4d4d;
+    --grey-500: #707070;
+    --grey-200: #f2f1f0;
+    --br-8: 8px;
+}
