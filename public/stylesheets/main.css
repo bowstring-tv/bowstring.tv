@@ -34,3 +34,146 @@
 }.avenir-thin {
     font-weight: 100;
 }
+
+
+/* BUTTON */
+.btn-primary {
+    font-size: 25px;
+    padding: 25px 50px;
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.btn-primary:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+.btn-secondary {
+    font-size: 25px;
+    padding: 28px 60px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+.btn-secondary:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+/* END BUTTON */
+
+
+
+h2,p {
+    color: var(--white);
+}
+
+.landing {
+    background-image: url('/images/bg-00.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.landing_boxone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top: 50px;
+    margin-bottom: 180px;
+}
+
+.landing_boxone_childone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing_boxone_childone_img {
+    width: 80px;
+    margin-bottom: 2rem;
+}
+.landing_boxone_childone_h2{
+    font-size: 54px;
+    width: 600px;
+    text-align: center;
+}
+.landing_boxone_childone_linedown {
+    position: relative;
+    width: 100px;
+    height: 5px;
+    background: var(--yellow-dark);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.box_btns {
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.landing_boxone_childtwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing_boxone_childtwo_p{
+    font-size: 30px;
+}
+
+.landing_boxtwo {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.landing_wrapper {
+    width: 100%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1.5fr) 2fr;
+    background: #030303a1;
+}
+.landing_wrapper>div{
+    align-self: stretch;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landing_wrapper_item{
+    border-right: 1px solid var(--grey-200);
+}
+.landing_wrapper>div>p {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.landing_wrapper>div>h2{
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
