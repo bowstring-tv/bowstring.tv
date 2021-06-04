@@ -1,5 +1,11 @@
+/* BASE */
 @import url(./base/normalize.css);
 @import url(./base/base.css);
+
+/* UTILITIES */
 @import url(./utilities/ff.css);
-@import url(./utilities/landing-page.css);
+@import url(./utilities/btn.css);
+
+/* PAGES */
+@import url(./pages/landing-page.css);
 
