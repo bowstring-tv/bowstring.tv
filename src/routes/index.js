@@ -5,5 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Bowstring' });
 });
+router.get('/landing', function(req, res, next){
+  res.render('landing-page');
+});
 
 module.exports = router;
