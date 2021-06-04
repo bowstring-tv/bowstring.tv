@@ -1,0 +1,32 @@
+.addresses-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.addresses-list p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.addresses-list h5 {
+    margin-bottom: .9rem;
+}
+
+@media screen and (min-width: 518px) {
+    .addresses-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 520px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .addresses-list {
+        max-width: none;
+    }
+    .addresses-list .address {
+        padding-bottom: 16px;
+    }
+    .addresses-list h5 {
+        margin-top: 0;
+    }
+}
