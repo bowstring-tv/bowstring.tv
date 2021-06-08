@@ -395,14 +395,8 @@ template {
     color: var(--black);
 }/* END BUTTON */ 
 
-.btn-secondary:hover {
-    background-color: var(--white);
-    color: var(--black);
-}
 
-/* END BUTTON */
-
-h2, p {
+.landing-h2, .landing-p {
     color: var(--white);
 }.landing {
     background-image: url('/images/bg-00.png');
@@ -502,3 +496,62 @@ h2, p {
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 1440px) {
+    .landing_wrapper>div>p {
+        font-size: 22px;
+    }
+    .landing_wrapper>div>h2{
+        font-size: 70px;
+    }
+}
+@media (max-width: 1154px) {
+    .landing_wrapper>div>h2{
+        font-size: 55px;
+    }
+   .landing_wrapper>div>p {
+        font-size: 22px;
+     }
+}
+
+@media (max-width: 1024px) {
+    .landing_wrapper>div>h2{
+        font-size: 50px;
+    }
+   .landing_wrapper>div>p {
+        font-size: 20px;
+     }
+}
+
+@media (max-width: 769px) {
+    .landing_boxone>div>img {
+        width: 70px;
+        margin-bottom: 0;
+    }
+    .landing_boxone>div>h2 {
+        font-size: 34px;
+        width: 420px;
+    }
+    .landing_boxone_childone_linedown {
+        padding: -40px;
+        margin: 0;
+    }
+    .box_btns {
+        width: 380px;
+    }
+    .box_btns > a {
+        font-size: 18px;
+        padding: 18px 40px;
+    }
+    
+    .landing_wrapper{
+        height: 200px;
+    }
+    .landing_wrapper>div>h2{
+        font-size: 50px;
+    }
+   .landing_wrapper>div>p {
+        font-size: 22px;
+     }
+}
+
