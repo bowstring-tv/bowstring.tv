@@ -1,0 +1,11 @@
+.social-links {
+    display: flex;
+}
+
+.social-links>*+* {
+    margin-left: 8px;
+}
+
+.social-links img {
+    width: 28px;
+}
