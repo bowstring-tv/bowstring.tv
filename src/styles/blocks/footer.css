@@ -18,15 +18,15 @@
     margin-top: 16px;
 }
 
-.footer-nav .social-links {
+.footer-nav .footer-social-links {
     display: flex;
 }
 
-.footer-nav .social-links>*+* {
+.footer-nav .footer-social-links>*+* {
     margin-left: 8px;
 }
 
-.footer-nav .social-links img {
+.footer-nav .footer-social-links img {
     width: 28px;
 }
 

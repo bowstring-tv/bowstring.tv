@@ -4,8 +4,17 @@
     border-radius: var(--br-8);
     color: var(--white);
     padding: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.btn:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
 /* BUTTON */
+
 .btn-primary {
     font-size: 25px;
     padding: 25px 50px;
@@ -15,7 +24,8 @@
     text-decoration: none;
     transition: 0.3s ease;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background: var(--black);
     color: var(--white);
 }
@@ -29,8 +39,10 @@
     text-decoration: none;
     transition: .3s ease;
 }
-.btn-secondary:hover{
+
+.btn-secondary:hover {
     background-color: var(--white);
     color: var(--black);
 }
+
 /* END BUTTON */
