@@ -3,7 +3,7 @@ const controller = {
         res.send('Category');
     },
     commercials: (req, res) => {
-        res.send('Category/Commercials');
+        res.render('commercials');
     }
 }
 
