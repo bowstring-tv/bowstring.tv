@@ -4,10 +4,41 @@
     /* Colors */
     --yellow-dark: #DE9816;
     --yellow-light: #FBB03B;
-    --black: #444;
+    --black: #000;
     --white: #fff;
     --grey-700: #4d4d4d;
     --grey-500: #707070;
     --grey-200: #f2f1f0;
     --br-8: 8px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--yellow-dark);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
 }

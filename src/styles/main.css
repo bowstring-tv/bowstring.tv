@@ -1,15 +1,25 @@
 /* BASE */
+
 @import url(./base/normalize.css);
 @import url(./base/base.css);
-
 /* UTILITIES */
-@import url(./utilities/ff.css);
 
+@import url(./utilities/ff.css);
+@import url(./utilities/color.css);
+@import url(./utilities/container.css);
+@import url(./utilities/text.css);
 /* BLOCKS */
+
+@import url(./blocks/scroll-style.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/contact-banner.css);
 @import url(./blocks/btn.css);
 @import url(./blocks/addresses-list.css);
-
+@import url(./blocks/header.css);
+@import url(./blocks/social-links.css);
 /* PAGES */
+
 @import url(./pages/landing-page.css);
+@import url(./pages/item-category.css);
+@import url(./pages/about.css);
+@import url(./pages/home-agency.css);
