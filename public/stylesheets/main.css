@@ -740,7 +740,7 @@ header {
     align-items: flex-end;
 }
 
-.item-cover > h1 {
+.item-cover>h1 {
     font-size: 72px;
     margin-left: 50px;
 }
@@ -750,7 +750,7 @@ header {
     display: flex;
 }
 
-.item-text > h2 {
+.item-text>h2 {
     font-size: 72px;
     margin-left: 70px;
 }
@@ -762,13 +762,13 @@ header {
     box-sizing: border-box;
 }
 
-.item-wrapper > div {
+.item-wrapper>div {
     position: relative;
     border-right: 1px solid #00000067;
     cursor: pointer;
 }
 
-.item-wrapper > div > a {
+.item-wrapper>div>a {
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -776,14 +776,14 @@ header {
     flex-direction: column;
 }
 
-.item-wrapper > div > a > img {
+.item-wrapper>div>a>img {
     width: 100%;
     height: 90%;
     padding-bottom: 50px;
     cursor: pointer;
 }
 
-.item-wrapper > div > a > div {
+.item-wrapper>div>a>div {
     position: absolute;
     background-color: var(--black);
     width: 100%;
@@ -792,13 +792,12 @@ header {
     z-index: 1;
 }
 
-.item-wrapper > div > a:hover > div {
+.item-wrapper>div>a:hover>div {
     background-color: var(--yellow-light);
     padding-top: 20px;
-
 }
 
-.item-wrapper > div > a > div > p {
+.item-wrapper>div>a>div>p {
     font-size: 30px;
     padding-left: 40px;
     margin: 40px 0px;
@@ -821,8 +820,8 @@ header {
 }
 
 .item-trailer.active {
- visibility:visible;
- opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .item-trailer iframe {
@@ -831,9 +830,9 @@ header {
     outline: none;
 }
 
-.close {
+.close-video {
     position: absolute;
-    top: 30px;
+    top: 130px;
     right: 30px;
     color: white;
     font-size: 35px;
@@ -843,7 +842,7 @@ header {
 }
 
 @media (max-width: 1200px) {
-    .item-wrapper > div > a > div > p {
+    .item-wrapper>div>a>div>p {
         margin: 35px 0px;
     }
 }
@@ -852,20 +851,19 @@ header {
     .section-item-category {
         margin-top: 100px !important;
     }
-    
     .item-cover {
         height: 50vh;
     }
-    .item-wrapper > div {
+    .item-wrapper>div {
         border: none;
     }
-    .item-cover > h1 {
+    .item-cover>h1 {
         font-size: 57px;
     }
-    .item-text > h2 {
+    .item-text>h2 {
         font-size: 43px;
     }
-    .item-wrapper > div > a > div > p  {
+    .item-wrapper>div>a>div>p {
         font-size: 24px;
         padding-left: 30px;
     }
@@ -884,18 +882,17 @@ header {
     .section-item-category {
         margin-top: 100px !important;
     }
-    
     .item-cover {
-        background-position-x:50%;
+        background-position-x: 50%;
         height: 50vh;
     }
-    .item-wrapper > div {
+    .item-wrapper>div {
         border: none;
     }
     .item-cover {
         justify-content: center;
     }
-    .item-cover > h1 {
+    .item-cover>h1 {
         font-size: 45px;
         margin: 0;
         padding-bottom: 30px;
@@ -903,7 +900,7 @@ header {
     .item-text {
         display: block;
     }
-    .item-text > h2 {
+    .item-text>h2 {
         padding: 0;
         margin: 30px 0;
         font-size: 36px;
@@ -915,7 +912,7 @@ header {
         grid-template-columns: repeat(1, 1fr);
         box-sizing: border-box;
     }
-    .item-wrapper > div > a > div > p {
+    .item-wrapper>div>a>div>p {
         margin: 35px 0px;
     }
 }
