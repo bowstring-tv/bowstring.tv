@@ -107,7 +107,7 @@
     opacity: 0;
 }
 
-.item-trailer.active {
+.item-trailer.active-video {
     visibility: visible;
     opacity: 1;
 }
@@ -120,7 +120,7 @@
 
 .close-video {
     position: absolute;
-    top: 130px;
+    top: 150px;
     right: 30px;
     color: white;
     font-size: 35px;

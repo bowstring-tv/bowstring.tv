@@ -668,10 +668,7 @@ header {
 }
 
 @media (max-width: 1024px) {
-    .landing {
-        /* margin-top: 100px!important; */
-    }
-    .landing_wrapper>div>h2 {
+    .landing_wrapper>div>h2{
         font-size: 50px;
     }
     .landing_wrapper>div>p {
@@ -819,7 +816,7 @@ header {
     opacity: 0;
 }
 
-.item-trailer.active {
+.item-trailer.active-video {
     visibility: visible;
     opacity: 1;
 }
@@ -832,7 +829,7 @@ header {
 
 .close-video {
     position: absolute;
-    top: 130px;
+    top: 150px;
     right: 30px;
     color: white;
     font-size: 35px;
