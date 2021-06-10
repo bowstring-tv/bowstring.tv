@@ -162,6 +162,23 @@ html, body {
 
 /* BLOCKS */
 
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--grey-500);
+    border-radius: 25px;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background: var(--yellow-light);
+}
+
 .footer-content {
     padding: 32px 16px;
     color: var(--black);
@@ -368,6 +385,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 122px!important;
 }
 
 .landing_boxone {
@@ -486,6 +504,9 @@ html, body {
 }
 
 @media (max-width: 1024px) {
+    .landing {
+        margin-top: 100px!important;
+    }
     .landing_wrapper>div>h2{
         font-size: 50px;
     }
@@ -537,7 +558,7 @@ html, body {
 .section-item-category {
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin-top: 122px !important;
     padding: 0;
     box-sizing: border-box;
 }
@@ -575,7 +596,6 @@ html, body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
     box-sizing: border-box;
 }
 
@@ -596,7 +616,7 @@ html, body {
 .item-wrapper > div > a > img {
     width: 100%;
     height: 90%;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     cursor: pointer;
 }
 
@@ -666,6 +686,9 @@ html, body {
 }
 
 @media (max-width: 1024px) {
+    .section-item-category {
+        margin-top: 100px !important;
+    }
     
     .item-cover {
         height: 50vh;
@@ -679,6 +702,10 @@ html, body {
     .item-text > h2 {
         font-size: 43px;
     }
+    .item-wrapper > div > a > div > p  {
+        font-size: 24px;
+        padding-left: 30px;
+    }
     .item-wrapper {
         width: 100%;
         display: grid;
@@ -691,9 +718,12 @@ html, body {
 }
 
 @media (max-width: 500px) {
+    .section-item-category {
+        margin-top: 100px !important;
+    }
     
     .item-cover {
-        background-position-x:40%;
+        background-position-x:50%;
         height: 50vh;
     }
     .item-wrapper > div {
@@ -728,10 +758,14 @@ html, body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     padding: 16px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--white);
+    z-index: 999;
 }
 
 .nav-open button {
@@ -761,6 +795,7 @@ header {
     flex-direction: column;
     background-color: var(--white);
     text-align: center;
+    z-index: 9999;
 }
 
 .main-nav.open {
@@ -800,6 +835,7 @@ header {
 
 .nav-links a.active {
     color: var(--yellow-dark);
+    z-index: 999999;
 }
 
 .nav-social-links {

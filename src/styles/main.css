@@ -7,7 +7,7 @@
 @import url(./utilities/ff.css);
 @import url(./utilities/color.css);
 /* BLOCKS */
-
+@import url(./blocks/scroll-style.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/contact-banner.css);
 @import url(./blocks/btn.css);

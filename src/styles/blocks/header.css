@@ -1,8 +1,12 @@
 header {
+    position: fixed;
+    width: 100%;
     padding: 16px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--white);
+    z-index: 999;
 }
 
 .nav-open button {
@@ -32,6 +36,7 @@ header {
     flex-direction: column;
     background-color: var(--white);
     text-align: center;
+    z-index: 9999;
 }
 
 .main-nav.open {
@@ -71,6 +76,7 @@ header {
 
 .nav-links a.active {
     color: var(--yellow-dark);
+    z-index: 999999;
 }
 
 .nav-social-links {
