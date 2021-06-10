@@ -7,7 +7,9 @@
 @import url(./utilities/ff.css);
 @import url(./utilities/color.css);
 @import url(./utilities/container.css);
+@import url(./utilities/text.css);
 /* BLOCKS */
+
 @import url(./blocks/scroll-style.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/contact-banner.css);
@@ -20,3 +22,4 @@
 @import url(./pages/landing-page.css);
 @import url(./pages/item-category.css);
 @import url(./pages/about.css);
+@import url(./pages/home-agency.css);

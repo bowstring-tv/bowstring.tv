@@ -20,6 +20,9 @@ router.get('/careers', mainController.careers);
 /* GET contact page. */
 router.get('/contact', mainController.contact);
 
+/* GET home agency page. */
+router.get('/agency', mainController.agency);
+
 
 
 module.exports = router;
