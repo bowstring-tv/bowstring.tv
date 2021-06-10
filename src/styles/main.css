@@ -10,7 +10,6 @@
 @import url(./blocks/contact-banner.css);
 @import url(./blocks/btn.css);
 @import url(./blocks/addresses-list.css);
-@import url(./utilities/landing-page.css);
 
 /* PAGES */
 @import url(./pages/landing-page.css);
