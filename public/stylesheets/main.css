@@ -172,6 +172,12 @@ img {
     padding: 0 32px;
 }
 
+@media (min-width: 900px) {
+    .container {
+        padding: 0 92px;
+    }
+}
+
 .text-center {
     text-align: center;
 }
