@@ -111,6 +111,10 @@ html, body {
     overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* UTILITIES */
 
 .avenir-black {
@@ -162,6 +166,10 @@ html, body {
 
 .color-yellow-light {
     color: var(--yellow-light);
+}
+
+.container {
+    padding: 0 32px;
 }
 
 /* BLOCKS */
@@ -353,6 +361,144 @@ html, body {
     .addresses-list h5 {
         margin-top: 0;
     }
+}
+
+header {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-open button {
+    background: transparent;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.nav-open button:hover {
+    background-color: var(--grey-200);
+}
+
+.header-branding img {
+    max-width: 200px;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.main-nav.open {
+    display: flex;
+}
+
+.nav-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-close button {
+    background-color: var(--black);
+    padding: 24px;
+    color: var(--white);
+    height: 1px;
+    width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    border-bottom: 4px solid var(--yellow-dark);
+    margin-bottom: 32px;
+}
+
+.nav-links a {
+    padding: 12px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-links a.active {
+    color: var(--yellow-dark);
+}
+
+.nav-social-links {
+    display: flex;
+}
+
+.nav-contact {
+    line-height: 32px;
+}
+
+.nav-contact h4 {
+    margin-bottom: 0;
+}
+
+.nav-contact h4+p {
+    margin-top: 0;
+}
+
+.nav-contact p+p {
+    font-size: .9rem;
+}
+
+@media (min-width: 1000px) {
+    .nav-open {
+        display: none;
+    }
+    .nav-close {
+        display: none;
+    }
+    .nav-social-links {
+        display: none !important;
+    }
+    .nav-contact {
+        display: none;
+    }
+    .main-nav {
+        position: static;
+        display: flex;
+        width: auto;
+        height: unset;
+    }
+    .nav-links {
+        display: flex;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-links>*+* {
+        margin-left: 32px;
+    }
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links>*+* {
+    margin-left: 8px;
+}
+
+.social-links img {
+    width: 28px;
 }
 
 /* PAGES */
@@ -731,140 +877,63 @@ html, body {
     }
 }
 
-header {
-    padding: 16px 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.about-page img:nth-child(1) {
+    min-height: 300px;
+    object-fit: cover;
 }
 
-.nav-open button {
-    background: transparent;
-    border: none;
-    padding: 16px;
-    cursor: pointer;
+.about-page p {
+    font-weight: 300;
 }
 
-.nav-open button:hover {
-    background-color: var(--grey-200);
+.about-page .section-dark {
+    background: black;
+    color: white;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.header-branding img {
-    max-width: 200px;
-}
-
-.main-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--white);
-    text-align: center;
-}
-
-.main-nav.open {
-    display: flex;
-}
-
-.nav-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.nav-close button {
-    background-color: var(--black);
-    padding: 24px;
-    color: var(--white);
-    height: 1px;
-    width: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-}
-
-.nav-links {
-    border-bottom: 4px solid var(--yellow-dark);
-    margin-bottom: 32px;
-}
-
-.nav-links a {
-    padding: 12px;
-    display: block;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.nav-links a.active {
-    color: var(--yellow-dark);
-}
-
-.nav-social-links {
-    display: flex;
-}
-
-.nav-contact {
-    line-height: 32px;
-}
-
-.nav-contact h4 {
-    margin-bottom: 0;
-}
-
-.nav-contact h4+p {
-    margin-top: 0;
-}
-
-.nav-contact p+p {
-    font-size: .9rem;
-}
-
-@media (min-width: 1000px) {
-    .nav-open {
-        display: none;
+@media (min-width: 700px) {
+    .about-page .columns {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        align-items: center;
+        margin-bottom: 64px;
     }
-    .nav-close {
-        display: none;
+    .about-page .columns>div:nth-child(1) {
+        border-right: 4px solid var(--grey-500);
     }
-    .nav-social-links {
-        display: none !important;
+    .about-page .columns>div:nth-child(2) {
+        border-right: 4px solid var(--grey-500);
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
-    .nav-contact {
-        display: none;
-    }
-    .main-nav {
-        position: static;
-        display: flex;
-        width: auto;
-        height: unset;
-    }
-    .nav-links {
-        display: flex;
-        border-bottom: none;
+    .about-page .columns>div:nth-child(3) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        padding-left: 32px;
     }
 }
 
-@media (min-width: 1200px) {
-    .nav-links>*+* {
-        margin-left: 32px;
+@media (min-width: 950px) {
+    .about-page .columns {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        align-items: stretch;
     }
-}
-
-.social-links {
-    display: flex;
-}
-
-.social-links>*+* {
-    margin-left: 8px;
-}
-
-.social-links img {
-    width: 28px;
+    .about-page .columns>div:nth-child(1) {
+        border-right: 4px solid var(--grey-500);
+    }
+    .about-page .columns>div:nth-child(2) {
+        border-right: 4px solid var(--grey-500);
+        grid-column: unset;
+        grid-row: unset;
+        padding-left: 32px;
+    }
+    .about-page .columns>div:nth-child(3) {
+        grid-column: unset;
+        grid-row: unset;
+        padding-left: 32px;
+    }
 }

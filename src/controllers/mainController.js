@@ -1,9 +1,9 @@
 const controller = {
     root: (req, res) => {
-        res.render('index', { title: 'Bowstring' });
+        res.render('index', { title: 'Bowstring', layout: 'layout-no-nav' });
     },
     about: (req, res) => {
-        res.send("About");
+        res.render('about');
     },
     team: (req, res) => {
         res.send("Team");
