@@ -8,7 +8,7 @@
 @import url(./utilities/color.css);
 @import url(./utilities/container.css);
 /* BLOCKS */
-
+@import url(./blocks/scroll-style.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/contact-banner.css);
 @import url(./blocks/btn.css);

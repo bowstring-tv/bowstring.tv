@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 122px!important;
 }
 
 .landing_boxone {
@@ -123,6 +124,9 @@
 }
 
 @media (max-width: 1024px) {
+    .landing {
+        margin-top: 100px!important;
+    }
     .landing_wrapper>div>h2{
         font-size: 50px;
     }

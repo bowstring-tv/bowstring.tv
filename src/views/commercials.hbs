@@ -7,7 +7,7 @@
     </div>
     <div class="item-wrapper">
         <div>
-            <a onclick="toggle();">
+            <a onclick="popupVideoCategory();">
                 <img src="\images\cat-commercials-xfinity.png" alt="">
                 <div>
                     <p class="item-p title-p avenir-black">Comcast</p>
@@ -17,7 +17,7 @@
                 <iframe src="https://player.vimeo.com/video/76979871?autoplay=0&loop=1&autopause=1" width="920" height="540" frameborder="0" allow="autoplay; fullscreen">
                 </iframe>
                 
-                <i class="fas fa-times close" onclick="toggle();"></i>
+                <i class="fas fa-times close-video" onclick="popupVideoCategory();"></i>
             </div>
         </div> 
         
@@ -114,9 +114,9 @@
 
 
 <script type="text/javascript">       
-      function toggle() {
+      function popupVideoCategory() {
         var trailer = document.querySelector(".item-trailer"); 
-        trailer.classList.toggle("active");
+        trailer.classList.toggle("active-video");
       }
 </script>
 
