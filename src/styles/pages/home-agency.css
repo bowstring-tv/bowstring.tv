@@ -16,7 +16,7 @@
     padding: 16px;
     cursor: pointer;
     display: block;
-    border: 1px solid white
+    border: 1px solid white;
 }
 
 .category:hover {
@@ -51,4 +51,23 @@
 .home-agency-page .brands {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.home-agency-page .brand {
+    text-align: center;
+}
+
+@media (min-width: 870px) {
+    .home-agency-page .categories {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .home-agency-page .brands {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .category {
+        min-height: 300px;
+    }
 }
