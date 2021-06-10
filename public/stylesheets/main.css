@@ -979,6 +979,9 @@ header {
         grid-row: unset;
         padding-left: 32px;
     }
+    main.about-page>*+* {
+        margin-top: 64px;
+    }
 }
 
 .home-agency-page {
