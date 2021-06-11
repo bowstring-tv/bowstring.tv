@@ -14,6 +14,14 @@
     padding-bottom: 32px;
 }
 
+.columns h3 {
+    font-size: 1.5rem;
+}
+
+.columns p {
+    line-height: 1.5rem;
+}
+
 @media (min-width: 700px) {
     .about-page .columns {
         display: grid;
@@ -59,5 +67,8 @@
     }
     main.about-page>*+* {
         margin-top: 64px;
+    }
+    .font-size-l-desktop {
+        font-size: 1.6rem;
     }
 }
