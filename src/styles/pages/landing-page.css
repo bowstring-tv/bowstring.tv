@@ -4,7 +4,7 @@
 
 .landing {
     background-image: url('/images/bg-00.png');
-    background-position: center;
+    background-position-x:54%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -83,7 +83,6 @@
     height: 220px;
     display: grid;
     grid-template-columns: 2fr repeat(3, 1.5fr) 2fr;
-    background: #030303a1;
 }
 
 .landing_wrapper>div {
@@ -93,10 +92,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: #0303033f;
 }
 
 .landing_wrapper_item {
-    border-right: 1px solid var(--grey-200);
+    border-right: 1px solid var(--grey-700);
 }
 
 .landing_wrapper>div>p {
@@ -111,6 +111,23 @@
     padding: 0;
 }
 
+.swiper-container{
+    display: none;
+}
+
+.swiper-pagination {
+    color: var(--yellow-light);
+    
+}
+.swiper-pagination-bullet {
+    background: var(--grey-700);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: var(--grey-200);
+}
+
+
 @media (max-width: 1440px) {
     .landing_wrapper>div>p {
         font-size: 22px;
@@ -122,7 +139,7 @@
 
 @media (max-width: 1154px) {
     .landing_wrapper>div>h2 {
-        font-size: 55px;
+        font-size: 60px;
     }
     .landing_wrapper>div>p {
         font-size: 22px;
@@ -130,11 +147,20 @@
 }
 
 @media (max-width: 1024px) {
+    .landing_wrapper{
+        height: 160px;
+    }
     .landing_wrapper>div>h2{
-        font-size: 50px;
+        font-size: 60px;
     }
     .landing_wrapper>div>p {
         font-size: 20px;
+    }
+    .swiper-desktop{
+        display: none;
+    }
+    .swiper-container{
+        display: block;
     }
 }
 
@@ -158,13 +184,25 @@
         font-size: 18px;
         padding: 18px 40px;
     }
-    .landing_wrapper {
-        height: 200px;
-    }
-    .landing_wrapper>div>h2 {
-        font-size: 50px;
-    }
     .landing_wrapper>div>p {
         font-size: 22px;
+    }
+}
+@media (max-width: 660px) {
+    .landing_wrapper>div {
+        padding-left: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    .landing_boxone>div>h2 {
+        font-size: 28px;
+        width: 310px;
+    }
+    .box_btns {
+        width: 300px;
+    }
+    .box_btns>a {
+        font-size: 16px;
+        padding: 18px 35px;
     }
 }
