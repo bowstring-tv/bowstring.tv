@@ -21,7 +21,7 @@ header {
 }
 
 .header-branding img {
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .main-nav {
@@ -68,7 +68,7 @@ header {
 }
 
 .nav-links a {
-    padding: 12px;
+    padding: 27px;
     display: block;
     font-weight: 600;
     letter-spacing: 1px;

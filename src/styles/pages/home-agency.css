@@ -65,18 +65,18 @@
         grid-template-columns: 25% 25% 25% 25%;
     }
     .category {
-        min-height: 40vh;
+        min-height: 50vh;
     }
 }
 
 @media (min-width: 1000px) {
     .category-overlay {
-        font-size: 20vw;
+        font-size: 25vw;
     }
 }
 
 @media (min-width: 1200px) {
     .category-overlay {
-        font-size: 15rem;
+        font-size: 25rem;
     }
 }
