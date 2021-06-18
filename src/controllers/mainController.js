@@ -15,7 +15,7 @@ const controller = {
         res.send("Careers");
     },
     contact: (req, res) => {
-        res.send("Contact");
+        res.render("contact");
     },
     agency: (req, res) => {
         res.render('home-agency');
