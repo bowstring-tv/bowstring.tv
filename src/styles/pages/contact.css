@@ -113,6 +113,12 @@
     color: var(--yellow-light);
 }
 
+.contact-page .submit-button {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 600px) {
     .contact-page {
         padding: 120px;
