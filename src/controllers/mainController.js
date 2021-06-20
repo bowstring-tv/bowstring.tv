@@ -6,10 +6,10 @@ const controller = {
         res.render('about');
     },
     team: (req, res) => {
-        res.send("Team");
+        res.render('team');
     },
     studio: (req, res) => {
-        res.send("Studio");
+        res.render('studio');
     },
     careers: (req, res) => {
         res.render("careers");

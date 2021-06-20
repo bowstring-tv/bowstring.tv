@@ -1,0 +1,109 @@
+.studio-section{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.studio-banner {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.studio-banner > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+.studio-banner > h1 {
+    position: absolute;
+    font-size: 72px;
+    color: var(--white);
+    margin-left: 70px;
+    margin-bottom: 5rem;
+}
+
+.studio-description {
+    padding: 30px 3rem;
+}
+.studio-description > p {
+    font-size: 30px;
+    color: var(--black);
+    letter-spacing: 0.4px;
+    line-height: 45px;
+}
+
+.studio-slider{
+    height: 800px;
+    margin-bottom: 3rem;
+}
+.studio-swiper-wrapper{
+    height: 100%;
+    
+}
+.studio-swiper-slide{
+    width: 100%;
+    padding: 0 3rem;
+}
+.studio-swiper-slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+@media (max-width: 1440px) {
+    .studio-slider{
+        height: 600px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .studio-banner {
+        height: 40vh;
+    }
+    .studio-banner > img {
+        object-fit:cover;
+    }
+    .studio-banner > h1 {
+        font-size: 57px;
+        margin-bottom: 3rem;
+    }
+    .studio-description {
+        padding: 1rem 5rem 5rem 5rem;
+    }
+    .studio-description > p {
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        line-height: 25px;
+    }
+    .studio-slider{
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .studio-swiper-slide{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media ( max-width: 680px) {
+    .studio-banner {
+        height: 40vh;
+    }
+    .studio-banner > h1 {
+        font-size: 57px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .studio-description {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .studio-slider{
+        height: 200px;
+        margin-bottom: 0;
+    }
+}
