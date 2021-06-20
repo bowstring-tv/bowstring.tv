@@ -1,0 +1,80 @@
+.careers-page {
+    margin-top: 122px;
+}
+
+.ac {
+    margin-top: 0;
+    border: none;
+}
+
+.accordion-container>*+* {
+    border-top: 2px solid #222;
+}
+
+.ac-panel {
+    background-color: #222;
+}
+
+.ac-content {
+    padding: 16px;
+}
+
+.ac-content h4 {
+    font-size: 1.3rem;
+}
+
+.ac-content .btn {
+    margin-top: 24px;
+    display: block;
+    text-align: center;
+}
+
+.ac>.ac-header .ac-trigger::after {
+    content: none;
+}
+
+.ac.is-active>.ac-header .ac-trigger::after {
+    content: none;
+}
+
+.ac-header .ac-trigger {
+    font-size: 1.3rem;
+    padding: 16px;
+}
+
+.ac.is-active>.ac-header .ac-trigger {
+    color: white;
+    background-color: #222;
+}
+
+.ac-header .ac-trigger:hover {
+    color: white;
+    background-color: #222;
+}
+
+.ac-panel * {
+    color: white;
+}
+
+@media (min-width: 700px) {
+    .ac-header .ac-trigger {
+        font-size: 1.4rem;
+        padding: 24px 64px;
+    }
+    .ac-content {
+        padding: 16px 64px;
+    }
+    .ac-content .btn {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ac-content .btn {
+        display: inline-block;
+        width: auto;
+    }
+    .careers-page {
+        margin-top: 178px !important;
+    }
+}

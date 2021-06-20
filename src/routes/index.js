@@ -17,6 +17,9 @@ router.get('/studio', mainController.studio);
 /* GET careers page. */
 router.get('/careers', mainController.careers);
 
+/* GET application form page. */
+router.get('/careers/executive-film-producer/application-form', mainController.applicationForm);
+
 /* GET contact page. */
 router.get('/contact', mainController.contact);
 

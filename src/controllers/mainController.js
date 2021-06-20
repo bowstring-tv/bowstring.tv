@@ -12,7 +12,10 @@ const controller = {
         res.send("Studio");
     },
     careers: (req, res) => {
-        res.send("Careers");
+        res.render("careers");
+    },
+    applicationForm: (req, res) => {
+        res.render("application-form");
     },
     contact: (req, res) => {
         res.render("contact");
