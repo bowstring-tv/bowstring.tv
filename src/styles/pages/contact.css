@@ -124,3 +124,22 @@
         padding: 120px;
     }
 }
+
+@media (min-width: 992px) {
+    .contact-page {
+        padding: 48px;
+    }
+    .contact-page .contact-address {
+        margin-top: 80px;
+        padding-left: 24px;
+    }
+    .contact-info {
+        margin-top: 80px;
+    }
+    .contact-info h5 {
+        margin-top: 0;
+    }
+    .contact-page .submit-button {
+        justify-content: flex-end;
+    }
+}
