@@ -47,6 +47,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 9;
 }
 
 .nav-close button {
@@ -61,10 +62,29 @@ header {
     border: none;
     cursor: pointer;
 }
+.button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.button-close button {
+    background-color: var(--black);
+    padding: 24px;
+    color: var(--white);
+    height: 1px;
+    width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
 
 .nav-links {
     border-bottom: 4px solid var(--yellow-dark);
-    margin-bottom: 32px;
+    margin-bottom: 32px; /*Este Margen hace que se vea decentralizado el menu*/
 }
 
 .nav-links a {

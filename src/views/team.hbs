@@ -1,0 +1,108 @@
+<section class="team-section mt-nav">
+    <div class="team-wrapper">
+        <div class="team-item" onclick="popupTeamInfo();" style="background-image: url('/images/prof-enrique.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Enrique Mendoza</h4>
+                <p class="team-item-position avenir-medium-oblique">Founder/CEO</p>
+            </div>
+        </div>
+        <div class="team-item-bio">
+            <div class="mt-nav">
+                <div class="team-item-bio-img">
+                    <img src="/images/prof-enrique.png" alt="">
+                </div>
+                <div class="team-item-bio-info">
+                    <h1 class="avenir-black">Enrique Mendoza</h1>
+                    <h4 class="avenir-black">Founder/CEO</h4>
+                    <p class="avenir-roman">Enrique co-founded Bowstring Studios in 2001 and currently serves 
+                        as Bowstring’s CEO and Creative Director. He combines his analytical
+                        mindset and creative outlook to customize video content solutions 
+                        for partners across all verticals. Enrique is passionate about finding 
+                        the best ways brands can produce and share their presence through 
+                        content that puts STORY FIRST. As an accomplished director and 
+                        cinematographer, Enrique has also developed powerful visuals for 
+                        clients such as NBC, Volvo, and Under Armour.
+                    </p>
+                </div>
+                <div class="button-close" onclick="popupTeamInfo();">
+                    <button>X</button>
+                </div>
+                {{!-- <i class="fas fa-times close-bio" onclick="popupTeamInfo();"></i> --}}
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-Natalie.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Sean Quinn</h4>
+                <p class="team-item-position avenir-medium-oblique">Founder & President</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-Sean.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Andy Hayman</h4>
+                <p class="team-item-position avenir-medium-oblique">Executive Vice President, Development</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-vanesa.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Vanessa Briceno-Scherzer</h4>
+                <p class="team-item-position avenir-medium-oblique">Executive Producer</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-enrique.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Natalie Johnson</h4>
+                <p class="team-item-position avenir-medium-oblique">Vice President Client Services</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-Natalie.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Bettina Abascal</h4>
+                <p class="team-item-position avenir-medium-oblique">Vice President Sales</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-Sean.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Larry Schwartz</h4>
+                <p class="team-item-position avenir-medium-oblique">Vice President of Business Affairs</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-vanesa.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Melissa Schriber</h4>
+                <p class="team-item-position avenir-medium-oblique">Vice President of Strategy</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-enrique.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Francisco Gilges</h4>
+                <p class="team-item-position avenir-medium-oblique">Vice President of Animation</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-Natalie.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Anamaria Llamozas</h4>
+                <p class="team-item-position avenir-medium-oblique">Finance Director</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-Sean.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Jeffery Berry</h4>
+                <p class="team-item-position avenir-medium-oblique">Creative Director</p>
+            </div>
+        </div>
+        <div class="team-item" style="background-image: url('/images/prof-vanesa.png');">
+            <div>
+                <h4 class="team-item-name avenir-medium-oblique">Mathew Bartolacci</h4>
+                <p class="team-item-position avenir-medium-oblique">Post Production Supervisor</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="text/javascript">
+    function popupTeamInfo() {
+        var info = document.querySelector(".team-item-bio");
+        info.classList.toggle("team-item-bio-active");
+    }
+</script>

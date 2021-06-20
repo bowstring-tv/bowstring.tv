@@ -1,0 +1,228 @@
+.team-section {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    box-sizing: border-box;
+}
+
+.team-wrapper {
+    width: 100%;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
+}
+
+.team-item {
+    position: relative;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+.team-item  div {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0px;
+    background: #00000075;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team-item-name, .team-item-position {
+    color: var(--white);
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+.team-item-name {
+    font-size: 30px;
+}
+.team-item-position {
+    font-size: 25px;
+}
+
+.team-item-bio {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.team-item-bio-active{
+    visibility: visible;
+    opacity: 1;
+}
+.team-item-bio > div {
+    position: relative;
+    width: 1000px;
+    height:400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+}
+.team-item-bio-img {
+    width: 30%;
+    height: 100%;
+}
+.team-item-bio-img > img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.team-item-bio-info {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px; 
+}
+.team-item-bio-info h1, .team-item-bio-info h4, .team-item-bio-info p {
+    margin: 0;
+    padding: 0;
+}
+.team-item-bio-info h1{
+    font-size: 52px;
+}
+.team-item-bio-info h4 {
+    font-size: 32px;
+    margin-bottom: 20px 
+}
+.team-item-bio-info p {
+    font: 16px;
+    line-height: 1.6;
+}
+.close-bio{ 
+    position: absolute;
+    color: var(--white);
+    background: var(--black);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .team-wrapper {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+    .team-item {
+        height: 360px;
+    }
+    .team-item-name, .team-item-position {
+        margin: 0 0 0 12 px;
+    }
+    .team-item-name {
+        font-size: 20px;
+    }
+    .team-item-position {
+        font-size: 16px;
+    }
+
+
+    .team-item-bio > div {
+        width: 96%;
+        height:410px;
+    }
+    .team-item-bio-img {
+        width:max-content;
+        height: 100%;
+    }
+    .team-item-bio-info {
+        width: 70vw;
+        height: 100%;
+        padding: 0px 30px; 
+    }
+    .team-item-bio-info h1{
+        font-size: 24px;
+    }
+    .team-item-bio-info h4 {
+        font-size: 16px;
+        margin-bottom: 15px 
+    }
+    .team-item-bio-info p {
+        font: 16px;
+        line-height: 1.5;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .team-item-bio > div {
+        width: 96%;
+        height:80vh;
+        flex-direction: column;
+    }
+    .team-item-bio-img {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px 0 0 20px;
+        margin-bottom: 5px;
+    }
+    .team-item-bio-info {
+        position: relative;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px 20px; 
+        overflow-y: scroll;
+        box-sizing: border-box;
+    }
+    .team-item-bio-info h1{
+        font-size: 20px;
+    }
+    .team-item-bio-info h4 {
+        font-size: 16px;
+        margin-bottom: 15px 
+    }
+    .team-item-bio-info p {
+        font: 16px;
+        line-height: 1.4;
+    }
+    
+}
+
+
+@media (max-width: 560px) {
+    .team-wrapper {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .team-item {
+        height: 260px;
+    }
+    .team-item-name {
+        font-size: 20px;
+    }
+    .team-item-position {
+        font-size: 16px;
+    }
+}

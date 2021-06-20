@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".landing-swiper-container", {
     autoplay: {
       delay: 1500,
       disableOnInteraction: false
@@ -16,4 +16,21 @@ var swiper = new Swiper(".swiper-container", {
       }
     }
 });
-      
+
+
+var swiper = new Swiper(".studio-swiper-container", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
