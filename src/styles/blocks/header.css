@@ -84,7 +84,7 @@ header {
 
 .nav-links {
     border-bottom: 4px solid var(--yellow-dark);
-    margin-bottom: 32px; /*Este Margen hace que se vea decentralizado el menu*/
+    margin-bottom: 15px; /*Este Margen hace que se vea centrado el menú (JV)*/
 }
 
 .nav-links a {

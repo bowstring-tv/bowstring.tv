@@ -42,10 +42,18 @@
     opacity: 0;
     transition: all .5s ease-in-out;
     pointer-events: none;
+    text-shadow: 0px;
+    transition-property: text-shadow;
+    transition-duration: 0.3s;
+    transition-delay: 0.05s;  
+    
 }
 
-.category:hover .category-overlay {
+.category:hover .category-overlay{
     opacity: 1;
+    text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
+
+
 }
 
 .home-agency-page .brands {

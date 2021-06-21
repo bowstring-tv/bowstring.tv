@@ -13,3 +13,4 @@ if (navButtonOpen) {
         nav.classList.remove('open')
     })
 }
+
