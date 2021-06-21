@@ -1,6 +1,10 @@
 .application-form-page {
     margin-top: 122px !important;
+    margin-bottom: 24px;
     padding: 0 16px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .application-form-page h2, .application-form-page h3 {
@@ -21,8 +25,81 @@
     font-weight: 700;
 }
 
+.file-field, .bool-field {
+    margin-top: 16px;
+}
+
+.file-field label, .bool-field label {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.file-field label, .file-field input, .bool-field label {
+    display: block;
+}
+
+.bool-field-buttons {
+    border: 1px solid #222;
+    border-radius: 8px;
+    display: inline-flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.bool-field-buttons input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.bool-field-buttons label {
+    margin-bottom: 0;
+}
+
+.bool-field-buttons div {
+    padding: 16px 24px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.bool-field-buttons>label+label {
+    border-left: 1px solid #222;
+}
+
+.bool-field-buttons input:checked+div {
+    background-color: var(--yellow-light);
+    color: white;
+}
+
+.file-field input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.file-field-area {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+}
+
+.file-field-area label {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--yellow-dark);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.file-field-chosen {
+    font-weight: 700;
+    font-weight: 1.2rem;
+    margin-top: 16px;
+    display: none;
+}
+
 .application-form-page .text-field input, .application-form-page .text-field textarea {
-    border: 2px solid #222;
+    border: 1px solid #222;
     background-color: white;
     border-radius: var(--br-8);
     padding: 10px;
@@ -30,42 +107,44 @@
     width: 100%;
 }
 
-.application-form-page .radio-field {
-    margin-top: 24px;
-}
-
-.application-form-page .radio-field label {
-    display: flex;
-    font-size: 1.1rem;
-    align-items: center;
-}
-
-.application-form-page .radio-field>*+* {
-    margin-top: 16px;
-}
-
-.application-form-page .radio-box {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(218, 218, 218, 0.7);
-    border-radius: 8px;
-    margin-right: 24px;
-}
-
-.application-form-page input[type=radio] {
-    visibility: hidden;
-    position: absolute;
-}
-
-.application-form-page input[type=radio]:checked+.radio-box {
-    background-color: var(--yellow-light);
-    border: 3px solid rgba(218, 218, 218, 0.7);
-}
-
 .application-form-page h4 {
     font-size: 1.5rem;
     margin-top: 64px;
+}
+
+.application-form-page .submit-button .btn {
+    border-color: #222;
+    color: #222;
+    width: 100%;
+}
+
+.application-form-page .submit-button {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 550px) {
+    .application-form-page {
+        padding: 0 64px;
+    }
+}
+
+@media (min-width: 700px) {
+    .application-form-page .submit-button {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .application-form-page .submit-button {
+        width: auto;
+    }
+    .application-form-page .submit-button .btn {
+        width: auto;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
 }
 
 @media (min-width: 1000px) {

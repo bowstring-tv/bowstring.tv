@@ -17,6 +17,10 @@
                 <label for="email"><span class="color-yellow-light">*</span> Email</label>
                 <input type="text" name="email" id="email">
             </div>
+            <div class="text-field">
+                <label for="phone"><span class="color-yellow-light">*</span> Phone</label>
+                <input type="text" name="phone" id="phone">
+            </div>
             {{!-- <div class="radio-field">
                 <label>
                     <input type="radio" name="type" value="agency">
@@ -34,13 +38,90 @@
                     Independent
                 </label>
             </div> --}}
-            <div class="text-field">
+            {{!-- <div class="text-field">
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
-            </div>
+            </div> --}}
             {{!-- <div class="submit-button">
                 <button type="submit" class="btn">SUBMIT</button>
             </div> --}}
+            {{!-- <h4>Profile</h4>
+            <div class="file-field">
+                <label for="resume"><span class="color-yellow-light">*</span> Resume</label>
+                <input type="file" name="resume" id="resume">
+            </div> --}}
+
             <h4>Profile</h4>
+            <div class="file-field">
+                <label for="resume"><span class="color-yellow-light">*</span> Resume</label>
+                <div class="file-field-area">
+                    <label for="resume">Upload a file</label> or drag and drop here
+                    <div class="file-field-chosen"></div>
+                </div>
+                <input type="file" name="resume" id="resume">
+            </div>
+
+            <h4>Details</h4>
+            <div class="text-field">
+                <label for="coverLetter">Cover Letter (Optional)</label>
+                <textarea name="coverLetter" rows="5" id="coverLetter"></textarea>
+            </div>
+
+            <div class="text-field">
+                <label for="salaryRange"><span class="color-yellow-light">*</span> Please provide a 
+                salary indication / range</label>
+                <input type="text" name="salaryRange" id="salaryRange">
+            </div>
+
+            <div class="bool-field">
+                <label for="hasPassport"><span class="color-yellow-light">*</span> Do you have a USA passport 
+                or valid permit to work?</label>
+                <div class="bool-field-buttons">
+                    <label>
+                        <input type="radio" name="hasPassport" value='1'>
+                        <div class="bool-field-true">Yes</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="hasPassport" value='0'>
+                        <div class="bool-field-false">No</div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="text-field">
+                <label for="referringEmployee"><span class="color-yellow-light">*</span> Have you been referred by an 
+                employee of Bowstring? 
+                If that’s the case, please state
+                their first name and last name.</label>
+                <input type="text" name="referringEmployee" id="referringEmployee">
+            </div>
+
+            <div class="submit-button">
+                <button type="submit" class="btn">SUBMIT</button>
+            </div>
         </form>
 </main>
+
+<script>
+    const dropContainer = document.querySelector('.file-field-area')
+    const fileInput = document.querySelector('.file-field input')
+
+    fileInput.onchange = function(evt) {
+        dropContainer.querySelector('.file-field-chosen').style.display = 'block'
+        dropContainer.querySelector('.file-field-chosen').innerHTML = `Chosen file: ${fileInput.files[0].name}`
+    }
+
+    dropContainer.ondragover = dropContainer.ondragenter = function(evt) {
+        evt.stopPropagation()
+        evt.preventDefault();
+    };
+
+    dropContainer.ondrop = function(evt) {
+        fileInput.files = evt.dataTransfer.files;
+
+        dropContainer.querySelector('.file-field-chosen').style.display = 'block'
+        dropContainer.querySelector('.file-field-chosen').innerHTML = `Chosen file: ${evt.dataTransfer.files[0].name}`
+        evt.stopPropagation()
+        evt.preventDefault();
+    };
+</script>
