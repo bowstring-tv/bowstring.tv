@@ -24,9 +24,10 @@
 }
 
 .category h4 {
-    font-size: 1.6rem;
+    font-size: 4vw;
     margin-left: 1.33em;
     margin-right: 1.33em;
+    margin-top: 20%;
 }
 
 .category-overlay {
@@ -77,16 +78,31 @@
     .category {
         min-height: 50vh;
     }
-}
+    a.category h4 { 
+        font-size: 1.7rem !important;
+        margin-left: 1.33em;
+        margin-right: 1.33em;
+    }   
 
 @media (min-width: 1000px) {
     .category-overlay {
         font-size: 25vw;
     }
+    a.category h4 {
+        font-size: 1.7rem !important;
+        margin-left: 1.33em;
+        margin-right: 1.33em;
+    }  
 }
 
 @media (min-width: 1200px) {
     .category-overlay {
         font-size: 25rem;
     }
+    a.category h4 { 
+        font-size: 1.7rem !important;
+        margin-left: 1.33em;
+        margin-right: 1.33em;
+    } 
+}
 }
