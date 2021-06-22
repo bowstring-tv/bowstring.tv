@@ -44,6 +44,7 @@
     display: inline-flex;
     cursor: pointer;
     overflow: hidden;
+    margin-left: 37%;
 }
 
 .bool-field-buttons input {
@@ -115,7 +116,8 @@
 .application-form-page .submit-button .btn {
     border-color: #222;
     color: #222;
-    width: 100%;
+    width: 50%;
+    margin-left: 0%;
 }
 
 .application-form-page .submit-button {
@@ -132,7 +134,7 @@
 
 @media (min-width: 700px) {
     .application-form-page .submit-button {
-        width: 50%;
+        width: 100%;
     }
 }
 

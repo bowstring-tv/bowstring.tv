@@ -1,5 +1,5 @@
 .contact-page {
-    margin-top: 150px !important;
+    margin-top: 142px !important;
     background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/images/bg-09.png) center/cover;
     padding: 16px;
     padding-top: 64px;
@@ -20,7 +20,7 @@
 }
 
 .text-field label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 12px;
 }
 
@@ -39,16 +39,22 @@
 
 .contact-page .radio-field {
     margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 .contact-page .radio-field label {
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     align-items: center;
 }
 
 .contact-page .radio-field>*+* {
     margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .contact-page .radio-box {
@@ -57,7 +63,7 @@
     height: 50px;
     background-color: rgba(218, 218, 218, 0.7);
     border-radius: 8px;
-    margin-right: 24px;
+    margin-right: 10px;
 }
 
 .contact-page input[type=radio] {

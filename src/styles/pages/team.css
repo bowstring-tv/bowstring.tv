@@ -109,6 +109,7 @@
 .team-item-bio-info p {
     font: 16px;
     line-height: 1.6;
+    text-align: justify;
 }
 .close-bio{ 
     position: absolute;

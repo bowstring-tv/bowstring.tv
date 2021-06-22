@@ -15,13 +15,20 @@
 @media screen and (min-width: 518px) {
     .addresses-list {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 520px;
+        max-width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 }
 
 @media screen and (min-width: 850px) {
     .addresses-list {
-        max-width: none;
+        max-width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-right: 10%;
     }
     .addresses-list .address {
         padding-bottom: 16px;

@@ -23,7 +23,7 @@
     font-size: 72px;
     color: var(--white);
     margin-left: 70px;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .studio-description {
@@ -54,6 +54,18 @@
     height: 100%;
     object-fit: cover;
     object-position: right;
+}
+.swiper-button-next {
+    color: white;
+    background-color: black;
+    padding: 44px 30px 45px 30px;
+    border-radius: 8px;
+}
+.swiper-button-prev {
+    color: white;
+    background-color: black;
+    padding: 44px 30px 45px 30px;
+    border-radius: 8px;
 }
 
 @media (max-width: 1440px) {

@@ -107,6 +107,16 @@
     visibility: hidden;
     opacity: 0;
 }
+.video-title-div {
+    position: fixed;
+    bottom: 5%;
+
+}
+.video-title-div h3 {
+    color: white;
+    font-size: 2vw;
+
+}
 
 .item-trailer.active-video {
     visibility: visible;

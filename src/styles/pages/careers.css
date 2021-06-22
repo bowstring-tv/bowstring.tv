@@ -8,7 +8,7 @@
 }
 
 .accordion-container>*+* {
-    border-top: 2px solid #222;
+    border-top: 2px solid rgb(61, 61, 61);
 }
 
 .ac-panel {
@@ -16,7 +16,8 @@
 }
 
 .ac-content {
-    padding: 16px;
+    padding: 0px 30px 0px 30px;
+    text-align: justify;
 }
 
 .ac-content h4 {
@@ -25,6 +26,7 @@
 
 .ac-content .btn {
     margin-top: 24px;
+    margin-bottom: 20px;
     display: block;
     text-align: center;
 }
@@ -39,7 +41,7 @@
 
 .ac-header .ac-trigger {
     font-size: 1.3rem;
-    padding: 16px;
+    padding: 30px;
 }
 
 .ac.is-active>.ac-header .ac-trigger {
@@ -58,14 +60,17 @@
 
 @media (min-width: 700px) {
     .ac-header .ac-trigger {
-        font-size: 1.4rem;
-        padding: 24px 64px;
+        font-size: 3.5vw;
+        padding: 35px 64px;
     }
     .ac-content {
         padding: 16px 64px;
     }
     .ac-content .btn {
         width: 50%;
+    }
+    .ac-content p {
+        text-align: justify;
     }
 }
 
@@ -75,6 +80,9 @@
         width: auto;
     }
     .careers-page {
-        margin-top: 178px !important;
+        margin-top: 142px !important;
+    }
+    .ac-content p {
+        text-align: justify;
     }
 }
